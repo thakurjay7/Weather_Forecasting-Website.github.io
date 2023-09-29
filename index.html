@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="Weather_style.css"> <!-- Css File -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- SEARCH BOX -->
+        <form action="#" class="nav-search-bar">
+            <input type="text" placeholder="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+        </form>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="background"></div>
+
+        <!-- MAIN CONTAINER -->
+        <div class="container">
+            
+            <!-- CONTENT AREA -->
+            <div class="content">
+   
+                <h2 class="logo">Weather Forecast</h2>
+
+                <div class="text-1">
+                    <h2> Welcome <br><span> To Our Website</span></h2>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis at libero eos repudiandae dolore fugit facere enim recusandae nulla nostrum asperiores quae, voluptatibus pariatur!</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"></a>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- WEATHER FIELD AREA -->
+            <div class="weather-container">
+                <div class="detail-box weather">
+                    <form action="#">
+                        <h2>Weather Detail</h2>
+
+                        <!-- ENTER ZIP CODE -->
+                        <div class="input-box">
+                            <span class="icon"><a href="https://worldpostalcode.com/" target="_blank"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a></span>
+                            <input type="number" required>
+                            <label>Zip/Postal Code</label>
+                        </div>
+
+                        <!-- ENTER COUNTRY CODE -->
+                        <div class="input-box">
+                            <span class="icon"><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements" target="_blank"><i class="fa-solid fa-earth-americas" style="color: #ffffff;"></i></a></span>
+                            <input type="text" required>
+                            <label >Country Code</label>
+                        </div> 
+
+                        <!-- SELECT TEMPERATURE -->
+                        <div class="select-box">
+                            <span class="icon"><i class="fa-solid fa-temperature-three-quarters" style="color: #ffffff;"></i></span>
+                            <label >Select Temperature</label>
+                            <select name="" id="select-Temp" required>
+                                <option value="">Temp</option>
+                                <option value="celsius">Celsius</option>
+                                <option value="fahrenheit">Fahrenheit</option>
+
+                            </select>
+                        </div> 
+
+                        <!-- SUBMIT BTN -->
+                        <button type="submit" class="btn">Get Weather</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- WEATHER INFORMATION -->
+            <div class="weather-info"></div>
+        </div>
+
+    </main>
+   
+  
+    <!-- FONT AWSM -->
+    <script src="https://kit.fontawesome.com/bc0eeab92a.js" crossorigin="anonymous"></script>
+
+    <!-- JS FILE -->
+    <script src="Weather_script.js"></script>
+</body>
+</html>
